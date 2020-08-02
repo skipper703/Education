@@ -1,3 +1,6 @@
+"""Programm are calculating population of human in future and checking result with real population (2020 year for example).
+Can be realased for each country"""
+
 import numpy as np
 def get_trend1(x1, x2):
     res = x1*2018 + x2
