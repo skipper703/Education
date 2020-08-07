@@ -1,3 +1,9 @@
+"""
+Program are checking the most popular crimes from Chicago database
+since 2001 to nowadays.
+Database got .csv format.
+"""
+
 import csv
 
 def get_key(d, value):
