@@ -22,6 +22,7 @@ token = j["token"]
 
 dict_artist = {}
 f = open("C:/Users/admin/.vscode/database.txt", "r")
+
 for line in f:
     linestr = line.rstrip('\n')
     # create header with our token
@@ -35,5 +36,8 @@ for line in f:
         dict_artist[j['sortable_name']] = j['birthday']
     except KeyError:
         pass
-print(dict_artist)
 f.close()
+
+dict_sorted = sorted(dict_artist.items(), key=lambda x: (x[1], x[0]))
+for i in range(len(dict_sorted)):
+    print(dict_sorted[i][0])
