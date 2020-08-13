@@ -1,3 +1,7 @@
+"""
+Program are checking the artist name for ID using Artsy API
+"""
+
 import json
 import requests
 
