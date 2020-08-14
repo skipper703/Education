@@ -30,7 +30,7 @@ for line in f:
     # init request with header
     r = requests.get("https://api.artsy.net/api/artists/{}".format(linestr), headers=headers)
     r.encoding = 'utf-8'
-    # server answer
+    # server response
     j = json.loads(r.text)
     try:
         dict_artist[j['sortable_name']] = j['birthday']
